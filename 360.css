@@ -1,0 +1,139 @@
+:root {
+  --bckGry: #aaa;
+  --wrapGry: #ddd;
+  --foot:#d1d1d1;
+  --black: #000;
+  --wht: #fff;
+  --lnk: #e64600;
+  --hdln: #0e0052;
+  --frmCl: #585c80;
+}
+
+html {
+	min-height: 100%;
+}
+
+html,
+body {
+	line-height: 1;
+	margin:0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--bckGry);
+	color:var(--black);
+	font:normal 1em/1.2em helvetica, arial, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+fieldset,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+label,
+main,
+menu,
+nav,
+section {
+    display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+#wrap {
+  background-color: var(--wrapGry);
+  border-left:1px solid var(--wht);
+  border-right:1px solid var(--wht);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin:0 auto;
+  max-width: 1000px;
+  padding:0;
+  width:80%;
+}
+
+/* ************************************** header ************************************** */
+
+header {
+  margin:2%;
+}
+nav {
+  display: flex;
+}
+nav a {
+  flex:1;
+}
+
+/* ************************************** main ************************************** */
+
+main {
+  display: flex;
+  grid-row-start:2;
+  grid-row-end: 3
+}
+main section {
+  flex:2;
+}
+main section:last-child {
+  flex:1;
+}
+/*main section:last-child div:last-child {
+  display: flex;
+  flex-flow:row wrap;
+}
+main section:last-child a {
+  padding:2%;
+  text-align: center;
+}
+main article {
+  margin:0;
+}*/
+
+/* ************************************** aside ************************************** */
+
+aside {
+  background-color: var(--wht);
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  /*border-radius: 0% 30% 30% 0% / 67px 67px;*/
+}
+
+aside article, main article {
+  border-bottom:dotted 1px #000;
+  margin:4% 6%;
+}
+
+/* ************************************** footer ************************************** */
+
+footer {
+  background-color: var(--foot);
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding:2%;
+}
+footer section {
+  flex:1;
+  padding:0 2% 0 0;
+}
+footer section:last-child {
+  display: flex;
+  flex-flow: row wrap;
+  flex:7 auto;
+}
+footer a {
+  flex:1;
+  text-align: center;
+}

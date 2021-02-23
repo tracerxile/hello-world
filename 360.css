@@ -9,6 +9,8 @@
   --frmCl: #585c80;
 }
 
+/* many of these issues will be solved with sass, though, css variables are pretty cool */
+
 html {
 	min-height: 100%;
 }
@@ -88,17 +90,6 @@ main section {
 main section:last-child {
   flex:1;
 }
-/*main section:last-child div:last-child {
-  display: flex;
-  flex-flow:row wrap;
-}
-main section:last-child a {
-  padding:2%;
-  text-align: center;
-}
-main article {
-  margin:0;
-}*/
 
 /* ************************************** aside ************************************** */
 
@@ -107,7 +98,6 @@ aside {
   grid-column-start: 1;
   grid-row-start: 1;
   grid-row-end: 3;
-  /*border-radius: 0% 30% 30% 0% / 67px 67px;*/
 }
 
 aside article, main article {

@@ -68,13 +68,17 @@ img {
 /* ************************************** header ************************************** */
 
 header {
-  margin:2%;
+	margin:2%;
+	padding:0;
+	width:100%;
+	height:auto;
 }
 nav {
-  display: flex;
+	display:flex;
+	background-color:#888888;
 }
 nav a {
-  flex:1;
+	flex:1;
 }
 
 /* ************************************** main ************************************** */

@@ -51,6 +51,13 @@
 	</div>
 	<script>
 		console.log('this ones for the ages');
+		// I can now access all the anchor tags with one line of code
+		let anc = document.getELementsByTagName('a');
+		// and there's more than one way to do it
+		let anch = document.querySelectorAll('a');
+		// the second one isn't live, yup uh huh
+		let logo = anch[0]; // this is the first anchor in the document and from here I can do stuff to it
+		
 	</script>
 </body>
 </html>

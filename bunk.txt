@@ -1,0 +1,1 @@
+/* this is just a file of some text in order to commit it to Git and then remove it */

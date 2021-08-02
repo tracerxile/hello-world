@@ -7,6 +7,7 @@
   --lnk: #e64600;
   --hdln: #0e0052;
   --frmCl: #585c80;
+  --highlight: #ffffaa;
 }
 
 html {
@@ -47,7 +48,7 @@ section {
     display: block;
 }
 
-img {
+img, video {
   max-width: 100%;
 }
 
@@ -80,7 +81,8 @@ nav a {
 main {
   display: flex;
   grid-row-start:2;
-  grid-row-end: 3
+  grid-row-end: 3;
+  margin:0;
 }
 main section {
   flex:2;

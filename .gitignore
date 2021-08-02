@@ -1,0 +1,7 @@
+# this git ignore sets the directory res to not be tracked by git
+# this folder is for db, libraries, and extra files related to the project but arent 
+# necessary for its operation
+
+error_log
+.DS_Store
+# oy line
